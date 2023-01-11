@@ -1,0 +1,19 @@
+div{
+    display: flexbox;
+    width:150px;
+    height : 150px;
+    border : 3px solid black;
+    
+}
+div:nth-of-type(1){
+    background-color:red;
+}
+div:nth-of-type(2){
+    background-color: rgb(44, 244, 32);
+}
+div:nth-of-type(3){
+    background-color: rgba(23, 32, 231, 0.9);
+}
+div:nth-of-type(4){
+    background-color: hsl(255, 75%, 50%);
+}

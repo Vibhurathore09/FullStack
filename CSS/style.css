@@ -1,0 +1,83 @@
+ul.external>li{
+    color: violet;
+    text-shadow: 2cm;
+    text-transform: uppercase;
+}
+div.Types{
+    color : rgb(94, 22, 165);
+}
+div.Selectors{
+    color : rgb(186, 63, 63);
+    margin-left: 15px;
+}
+#i1231{
+    color:rgb(65, 104, 139);
+}
+input[type ="text"]{
+    /* color :yellow; */
+    background-color: aqua;
+}
+input[type = "password"]{
+    background-color: yellow;
+}
+ul ol li{
+    color: burlywood;
+    background: #000;
+}
+ul ol ul li{
+    color : pink;
+    background : #000;
+}
+h1~p{
+    font-weight: bold;
+    background-color: #333;
+    color: #fff;
+    padding: .5em;
+}
+#div{
+    border : 2px solid black;
+    background-color: lightcoral;
+    height: 100px;
+    font-weight:  100;
+    font-size: 11px;
+    line-height: 1.2;
+    text-align : center;
+    width: 100px;
+    align-items: center;
+    align-self: start;
+}
+#div:hover{
+    border: 2px solid black;
+    border-radius: 100%;
+    background-color : lightblue;
+    height : 100px;
+    width: 100px;;
+}
+#li:nth-child(odd){
+    background-color: grey;
+    border : 1px solid black;
+}
+#li:nth-child(even){
+    background-color: rgb(252, 252, 205);
+    border : 1px solid yellow;
+}
+#li:nth-child(8){
+    background-color: antiquewhite;
+    border:red 1px solid;
+}  
+dt {
+    font-weight: bold;
+}
+dd {
+    margin: 3px;
+}
+
+dd:nth-of-type(even) {
+    border: 2px solid orange;
+}
+section.section>p:nth-child(3){
+    background-color: black;
+}
+div.nthtype>p:nth-of-type(2){
+    color:red;
+}

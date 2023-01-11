@@ -1,0 +1,31 @@
+.parent{
+    height: 98vh;
+    width : 98vw;
+    /* background-color: aqua; */
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loader{
+    height: 60px;
+    width : 60px; 
+    /* background-color: white; */
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    /* animation-name : loader; */
+    /* animation-duration: 1s; */
+    animation: loader 2s linear infinite;
+    /* animation-iteration-count: infinite; */
+    border: 16px solid #f3f3f3; 
+    border-top: 16px solid greyx;
+    border-radius: 50%
+}
+@keyframes loader {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

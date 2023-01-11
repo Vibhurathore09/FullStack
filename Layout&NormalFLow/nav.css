@@ -1,0 +1,30 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+nav{
+    position: fixed;
+    display: inline;
+    background-color: #83c5be;
+    border : 1px solid #edf6f9;
+    height: 100px;
+    width: 100%;
+}
+
+li{
+    list-style: none;
+    display: inline;
+    /* padding: 10px; */
+    margin:10px;
+    position: relative;
+    top:10px;
+}
+a{
+    color:#006d77;
+    text-decoration: none;
+}
+li:nth-of-type(4){
+    position: absolute;
+    right : 20px;
+    top:-1px;
+}

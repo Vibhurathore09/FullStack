@@ -1,0 +1,41 @@
+div{
+    position: static;
+    border:2px solid black;
+    display: inline-block;
+    height: 200px;
+    width:200px;
+    top:20px;
+    right:20px;     
+}
+div.relative{
+    position: static;
+    display: inline-block;
+}
+div.relative-middle{
+    position: relative;
+    top:40px;
+    left : 30px; 
+}
+div.absolute{
+    position: static;
+}
+div.absolute-middle{
+    position: absolute;
+    top : 10px;
+    left : 10px; 
+}
+div.fixed-middle{
+    position:fixed;
+    top : 250px;
+    left : 500px;
+}
+div.class{
+    display: block;
+    position: sticky;
+    top : 10px;
+    background-color: blue;
+    width:100%;
+    margin:10px;
+    height:60 px;
+
+}

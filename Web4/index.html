@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <style>
+        body {
+            background: #56CCF2;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #2F80ED, #56CCF2);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+
+        .con {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            width: 450px;
+            top: 55%;
+            left: 50%;
+            height: 400px;
+            border: 1px solid #000000;
+            padding: 30px;
+        }
+
+        .bot {
+            padding: 10px;
+            margin: auto;
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .button {
+            background-image: linear-gradient(to bottom, transparent, transparent 50%, rgba(0, 0, 0, .04));
+            box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .05), inset 0 1px 0 0 rgba(255, 255, 255, .45), inset 0 -1px 0 0 rgba(255, 255, 255, .15), 0 1px 0 0 rgba(255, 255, 255, .15);
+            background-color: #fff;
+            border-radius: 3px solid black;
+            border: 1px solid #c4c4c4;
+            background-color: transparent;
+            height: 60px;
+            padding: 5px;
+            font-size: 2rem;
+            color: #333;
+            text-shadow: 0 1px rgba(255, 255, 255, .4);
+        }
+
+        .button:hover {
+
+            background-color: #8f75b6;
+
+        }
+
+        .optr {
+
+            color: #fff;
+
+            background-color: #ff7171;
+
+        }
+
+        .clear {
+            color: #fff;
+            background-color: #f0595f;
+            border-color: #b0353a;
+            margin-left: 110px;
+            width: 100px;
+            height: 60px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .clear:hover {
+
+            background-color: #f17377;
+
+        }
+
+        .esgn {
+            background-color: #ff8503;
+            color: #fff;
+            border-color: #25a8e0;
+        }
+
+        .esgn:hover {
+
+            background-color: #4e9ed4;
+
+        }
+
+        .screen {
+            justify-content: left;
+            font-size: medium;
+            background-color: rgb(246, 253, 255);
+            color: black;
+            width: 95%;
+            height: 30%;
+            padding: 20px;
+            padding-left: 40%;
+            margin: auto;
+            cursor: default;
+            margin-left: 5px;
+            margin-bottom: 10px;
+        }
+    </style>
+
+    <title>Document</title>
+
+</head>
+
+<body>
+
+
+
+    <div class="con">
+
+        <br>
+
+        <table>
+
+            <tr>
+
+                <td colspan="3"><input type='text' id='answer' class='screen' style="text-align: right;"></td>
+
+                <td>
+
+                    <input type='button' value='C' onclick="deleteAll()" class="clear" />
+
+                </td>
+
+            </tr>
+
+        </table>
+
+        <div class="bot">
+
+            <input value="7" type="button" class="button" onClick="display('7')"></input>
+
+            <input value="8" type="button" class="button " onClick="display('8')"></input>
+
+            <input value="9" type="button" class="button" onClick="display('9')"></input>
+
+            <input value="/" type="button" class="optr" onClick="display('/')"></input>
+
+            <input value="4" type="button" class="button" onClick="display('4')"></input>
+
+            <input value="5" type="button" class="button" onClick="display('5')"></input>
+
+            <input value="6" type="button" class="button" onClick="display('6')"></input>
+
+            <input value="*" type="button" class="optr" onClick="display('*')"></input>
+
+            <input value="1" type="button" class="button" onClick="display('1')"></input>
+
+            <input value="2" type="button" class="button" onClick="display('2')"></input>
+
+            <input value="3" type="button" class="button" onClick="display('3')"></input>
+
+            <input value="-" type="button" class="optr" onClick="display('-')"></input>
+
+            <input value="0" type="button" class="button" onClick="display('0')"></input>
+
+            <input value="." type="button" class="button" onClick="display('.')"></input>
+
+            <input value="=" type="button" class="button esgn" onClick="calculate()"></input>
+
+            <input value="+" type="button" class="optr" onClick="display('+')"></input>
+
+        </div>
+
+    </div>
+
+    <script>
+        function display(val) {
+
+            document.getElementById('answer').value += val
+
+            return val
+
+        }
+
+        function calculate() {
+
+            let x = document.getElementById('answer').value
+
+            let y = eval(x);
+
+            document.getElementById('answer').value = y
+
+            return y
+
+        }
+        function deleteAll() {
+
+            document.getElementById('answer').value = ''
+
+        }
+    </script>
+
+</body>
+
+</html>

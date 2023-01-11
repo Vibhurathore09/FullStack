@@ -1,0 +1,26 @@
+*{
+    margin:0;
+    padding: 0;
+}
+nav{
+    border:1px solid #676767;
+    background-color: black;
+    height: 75px;
+    object-fit: contian;
+    padding: 15px 20px;
+    
+}
+
+ul{
+    display: flex;
+    flex : 20px 20px ;
+}
+img{
+    height: 65px;
+    width: 65px;
+    object-fit:contain;
+}
+li{
+    background-color: white;
+    display: inline;
+}

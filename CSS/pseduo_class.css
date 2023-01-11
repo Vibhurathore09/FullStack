@@ -1,0 +1,25 @@
+/* id>attribute>class>Element */
+h1::before{
+    content:'this is Before';
+    color:yellow;
+}
+h1::after{
+    content :  ' this is After';
+    color:rgb(196, 219, 239);
+    background-color: rgb(21, 20, 20);
+}
+h1.top-heading{
+    content:'this is haha';
+    color : royalblue;
+}
+section{
+    color:royalblue;
+    border : 3px solid black;
+
+}
+ul{
+    border : 3px solid black;
+}
+section ul li{
+    border : inherit;
+}

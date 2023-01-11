@@ -1,0 +1,26 @@
+article{
+    font-size: 5rem;
+    text-shadow: 12px 12px 2px pink;
+}
+h1:hover{
+    text-transform: capitalize;
+    transform: translate(200px);
+    transition-delay: 1s;
+}
+h2:hover{
+    transform: rotate(2.5turn);
+    transition-delay: 1s;
+}
+h3:hover{
+    transform: rotateX(45deg);
+    transition-delay: 1s;
+}
+h4:hover{
+    transform: rotateY(45deg);
+    transition-delay: 1s;
+}
+h5:hover{
+    /* transform: translate(30px, 20px) rotate(20deg); */
+    /* transition-delay: 1s; */
+    animation: .5s linear 1s infinite alternate slidein;
+}
